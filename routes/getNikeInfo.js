@@ -9,7 +9,7 @@ router.get("/", function(req, res, next) {
     // res.json(data.length);
     if (!err) {
       console.log(docs);
-      res.jsonp(docs);
+      res.jsonp(docs.slice(0, 4));
     } else {
       throw err;
     }
