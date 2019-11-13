@@ -18,6 +18,7 @@ var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users");
 var nikeInfoRouter = require("./routes/getNikeInfo");
 var newsRouter = require("./routes/getNews");
+var UpRouter = require("./routes/upComing");
 var app = express();
 
 // view engine setup
@@ -36,6 +37,7 @@ app.use("/", indexRouter);
 app.use("/users", usersRouter);
 app.use("/nike", nikeInfoRouter);
 app.use("/news", newsRouter);
+app.use("/upcoming", UpRouter);
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
