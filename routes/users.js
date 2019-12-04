@@ -134,6 +134,19 @@ router.delete("/delete", async (req, res) => {
     }
   });
   res.status(200).send("Delete successfully");
+  // const filter = { email: req.body.email };
+  // console.log(req.body);
+  // Favbrand.deleteOne(filter, err => {
+  //   if (err) {
+  //     return handleError(err);
+  //   }
+  // });
+  // User.deleteOne(filter, err => {
+  //   if (err) {
+  //     return handleError(err);
+  //   }
+  // });
+  // res.status(200).send("Delete successfully");
 });
 
 // router.put("/reset", async (req, res) => {
